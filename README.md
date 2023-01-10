@@ -1,12 +1,17 @@
 # Ping-0f-Death
 HEAVILY multi-threaded dos/ddos ping tool
 
-
 Usage : 
 ```shell
 python3 PoD.py -i <Target IP> -t <Threads>
 python3 PoD.py -l List_IP.txt -t <Threads>
 ```
+
+## DEMO
+
+
+![PoC-PoD](https://user-images.githubusercontent.com/55347142/211563430-6071af20-46f4-473a-b5de-02344d070072.gif)
+
 
 ## Support
 
