@@ -1,6 +1,13 @@
 # Ping-0f-Death
 HEAVILY multi-threaded dos/ddos ping tool
 
+Installation :
+```shell
+git clone https://github.com/34zY/Ping-0f-Death.git
+cd Ping-0f-Death/
+python PoD.py
+```
+
 Usage : 
 ```shell
 python3 PoD.py -i <Target IP> -t <Threads>
