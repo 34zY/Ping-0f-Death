@@ -8,6 +8,10 @@ python3 PoD.py -i <Target IP> -t <Threads>
 python3 PoD.py -l List_IP.txt -t <Threads>
 ```
 
+## Support
+
+Linux/Windows
+
 ## Warning
 
 ⚠ Don't put too much threads when using the list option this may crash the script
