@@ -10,8 +10,8 @@ python PoD.py
 
 Usage : 
 ```shell
-python3 PoD.py -i <Target IP> -t <Threads>
-python3 PoD.py -l List_IP.txt -t <Threads>
+python PoD.py -i <Target IP> -t <Threads>
+python PoD.py -l List_IP.txt -t <Threads>
 ```
 
 ### DEMO
