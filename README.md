@@ -1,33 +1,67 @@
 # Ping-0f-Death
-HEAVILY multi-threaded dos/ddos ping tool
+HEAVILY multi-threaded DOS/DDOS ping tool with GUI interface
 
-Installation :
+## Demo (Command line & Graphical Interface)
+
+![PoC](https://github.com/34zY/Ping-0f-Death/blob/main/demo/GUI.gif)
+
+## Features
+
+- Multi-threaded ICMP flood attack
+- Verbose mode to track packets sent
+- Monitoring mode to check target response
+- Graphical User Interface (GUI) for easy use
+- Enhanced security and input validation
+- Real-time activity logging
+- Support for single target or multiple targets from file
+- Cross-platform (Linux/Windows)
+
+## Installation
+
 ```shell
 git clone https://github.com/34zY/Ping-0f-Death.git
 cd Ping-0f-Death/
-python PoD.py
 ```
 
-Usage : 
+## Usage (Graphical interface)
 ```shell
-python PoD.py -i <Target IP> -t <Threads>
-python PoD.py -l List_IP.txt -t <Threads>
+python PoD_GUI.py
 ```
 
-### DEMO
+GUI Features:
+
+- No command line knowledge required
+- Real-time activity log with color coding
+- Easy target selection (single IP or file)
+- Thread count configuration
+- Verbose and monitor mode toggles
+- Start/Stop/Clear controls
+- Status bar with active thread counter
 
 
-![PoC-PoD](https://user-images.githubusercontent.com/55347142/211563430-6071af20-46f4-473a-b5de-02344d070072.gif)
+## Usage (Command line)
+```shell
+# Single target
+python PoD.py -i <Target IP> -t <Threads> [-v] [-m]
+# Multiple targets
+python PoD.py -l targets.txt -t <Threads> [-v] [-m]
 
+# Examples
+python PoD.py -i 192.168.1.1 -t 100 -v -m
+python PoD.py -l targets.txt -t 50 -m
+```
 
-### Support
+Options:
 
-Linux/Windows
+- -i <IP> : Single target IP address
+- -l <file> : File containing list of IPs (one per line)
+- -t <threads> : Number of threads per target (max 5000)
+- -v : Verbose mode (show packets sent count)
+- -m : Monitor mode (check target response every 10s)
+- -h : Show help message
 
-### Warning
+## Disclaimer
+I'm not responsible for bad uses of this script.
 
-⚠ Don't put too much threads when using the list option this may crash the script
-          there will be your number of thread for each IP
-_________________
-
-#### I'm not responsible for bad uses of this script
+## Author
+@34zY
